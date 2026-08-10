@@ -40,5 +40,6 @@ def log_event(event: str, level: str = "info", **fields) -> str:
         "timestamp": utc_now_iso(),
     }
     log_event.update(fields)
-    print(json.dumps(log_event, ensure_ascii=False))
-    return json.dumps(log_event, ensure_ascii=False)
+    log_json = json.dumps(log_event, ensure_ascii=False)
+    print(log_json)
+    return log_json
