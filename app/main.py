@@ -124,7 +124,7 @@ def ready(store: ConversationStore = Depends(get_store)):
             status_code=503,
             content={"status": "not ready", "redis": False},
         )
-    return {"status": "ready", "redis": True},
+    return {"status": "ready", "redis": True,}
 
 
 # ─────────────────────────────────────────────────────────────
