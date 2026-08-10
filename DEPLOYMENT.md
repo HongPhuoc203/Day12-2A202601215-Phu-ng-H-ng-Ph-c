@@ -18,9 +18,9 @@
 
 | Mục | Nội dung |
 |-----|----------|
-| Public URL | https://TODO-thay-bang-url-that.up.railway.app |
-| Platform | Railway / Render / Cloud Run — (điền platform bạn dùng) |
-| Ngày deploy | (điền ngày) |
+| Public URL | https://day12-agent-4v8i.onrender.com |
+| Platform | Render |
+| Ngày deploy | 10/08/2026 |
 
 ## Biến Môi Trường Đã Set Trên Cloud
 
@@ -30,7 +30,7 @@ Ghi tên biến và **nguồn giá trị**, không ghi giá trị:
 |------|--------|---------|
 | `PORT` | ✅ | platform tự gán |
 | `AGENT_API_KEY` | ✅ | đặt trong dashboard, không nằm trong repo |
-| `REDIS_URL` | ✅ | (điền: Redis add-on của platform / Upstash / ...) |
+| `REDIS_URL` | ✅ | Redis service trên Render |
 | `RATE_LIMIT_PER_MINUTE` | ✅ | 10 |
 | `MONTHLY_BUDGET_USD` | ✅ | 10.0 |
 | `LOG_LEVEL` | ✅ | INFO |
@@ -72,9 +72,34 @@ done; echo
 
 Dán output của các lệnh trên vào đây:
 
-```
-(điền output)
-```
+# 1
+$URL="https://day12-agent-4v8i.onrender.com"
+# 2
+HTTP/1.1 200 OK
+Date: Mon, 10 Aug 2026 04:40:40 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+cf-cache-status: DYNAMIC
+rndr-id: 38ba8856-38c7-4e45
+Server: cloudflare
+vary: Accept-Encoding
+x-render-origin-server: uvicorn
+CF-RAY: a28c52e12cc28129-HKG
+alt-svc: h3=":443"; ma=86400
+# 3
+401
+# 4
+"answer":  "CÃ¢u há»i hay. Deploy lÃ  gÃ¬ thÆ°á»ng ÄÆ°á»£c giáº£i quyáº¿t báº±ng cÃ¡ch chuáº©n hÃ³a mÃ´i trÆ°á»ng cháº¡y: cÃ¹ng má»t image cháº¡y giá»ng nhau á» laptop vÃ  trÃªn cloud. (MÃ¬nh Äang nhá» 2 lÆ°á»£t trao Äá»i trÆ°á»c ÄÃ³.)",
+    "user_id":  "sv-test",
+    "history_length":  2,
+    "cost_usd":  3.315E-05,
+    "tokens":  {
+                   "in":  41,
+                   "out":  45
+               }
+# 5               
+200 200 200 200 200 200 200 200 200 200 429 429 429 429 429 
 
 ## Ảnh Chụp Màn Hình
 
@@ -96,6 +121,4 @@ Không đăng ký được tài khoản cloud? Vẫn nộp được bài, nhưng
    `http://localhost:8000`
 5. Ghi rõ lý do không deploy được vào phần dưới đây:
 
-```
-(điền lý do nếu dùng phương án dự phòng, ngược lại xóa mục này)
-```
+
