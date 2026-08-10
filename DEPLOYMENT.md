@@ -10,9 +10,9 @@
 
 | Mục | Nội dung |
 |-----|----------|
-| Họ và tên | (điền họ tên) |
-| Mã học viên | (điền mã học viên) |
-| Repo | (điền link repo DAY12-...) |
+| Họ và tên | Phùng Hồng Phước |
+| Mã học viên | 2A202601215 |
+| Repo | https://github.com/HongPhuoc203/Day12-2A202601215-PhungHongPhuoc.git |
 
 ## Service
 
